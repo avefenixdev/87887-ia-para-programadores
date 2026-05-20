@@ -139,9 +139,42 @@ Formato:
 - Ejemplo de uso
 ```
 
-# 8
+# 8 Nivel de detalle
+Especifico con detalle el nivel de lo que necesito
 
 ```prompt
-Actuá como un desarrollar front junior para desarrollar una página web. Usando los lenguajes de programación html, css y js. Utilizar la librería Tailwind CSS. Para lograr mostrar mis proyectos. Debe incluir las siguientes apartados. Inicio, trabajos, información personal y contacto. Tengo 5 imagenes por proyecto para mostrar en el apartado trabajos. Usar Tailwind y evitar usar Bootstrap. Seguir buenas prácticas, utilizar lo último e diseño UX/UI. Generar en un archivo zip. El código separado por tecnología. O sea un archivo para html, otro para css y otra js.
+Nivel:
+- Básico (para principiantes)
+- Intermedio (explicar decisiones)
+- Avanzado (asumir conocimientos previos)
+```
 
+# 9 Ejemplos de entrada y salida (Muy recomendable)
+Le doy ejemplos que ajustan a la IA a cierta entrada y salida de datos
+
+```prompt
+Entrada de datos:
+- ...
+Salida de datos:
+- ...
+```
+
+> Ejemplo
+En un sistema de autenticación por JWT
+
+* Tengo de entrada: correo y password
+* Tengo de salida: token
+
+# 10 Validaciones finales
+Le pido a la AI que se autocorrija. Auto controle
+
+```prompt
+Antes de responder:
+- Verificia coherencia
+- Evita suposiciones
+- Aclarar si algo no es posible
+```
+
+```prompt
+Actuá como un desarrollar front junior para desarrollar una página web. Usando los lenguajes de programación html, css y js. Utilizar la librería Tailwind CSS. Para lograr mostrar mis proyectos. Debe incluir las siguientes apartados. Inicio, trabajos, información personal y contacto. Tengo 5 imagenes por proyecto para mostrar en el apartado trabajos. Usar Tailwind y evitar usar Bootstrap. Seguir buenas prácticas, utilizar lo último e diseño UX/UI. Generar en un archivo zip. El código separado por tecnología. O sea un archivo para html, otro para css y otra js. Nivel de detalle intermedio. Si consideras hacerme preguntas para evitar ambiguedades o suposiciones por favor realizalas.
 ```
