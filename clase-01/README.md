@@ -30,3 +30,61 @@
 3. Contexto de proyecto.
 4. Contexto Global.
 
+# Artefactos (modales) en las IAs
+Es la capacidad de la IA de generar una previsualización de lo que genera
+
+```prompt
+Necesito una página web sencilla para mostrar mis proyectos. O sea una página tipo landingpage de portfolio. Que tenga 4 secciones. Inicio, trabajos, información personal y contacto. Generar un canva para ver como quedo. En html, css y js.
+```
+
+> Ejemplos
+
+* CHATGPT <https://chatgpt.com/share/6a0db58a-6c1c-83e9-91dd-5dd8d97ad944>
+* GEMINI <https://gemini.google.com/share/8256d43d1959>
+* CLAUDE <https://claude.ai/share/e493fd5b-87ef-46de-b0c4-13e117d8ec9c>
+
+# ¿Qué es el prompt engineering?
+Es la disciplina de diseñar instrucciones claras, completas y verificables para que una IA genere exactgamente lo que necesitás, sin suposiciones ni relleno innecesario.
+
+## Template de Prompt (Para cualquier IA)
+
+# 1 Rol de la IA (obligatorio)
+Defini desde que lugar debe responser. Sin Rol = respuestas va a ser genéricas
+
+```prompt
+Actuá como [rol principal] 
+Tenés experiencia [nivel/contexto]
+Tu objetivo es [qué priorizar]
+``` 
+
+> Ejemplos
+
+* desarrollar senior backend
+* docente técnico para principantes
+* arquitecto de software orientado a producción
+* desarrollar frontend junior
+
+# 2 Lenguaje, entorno y stack técnico
+Tenemos que ser muy precisos incluir versión de la tecnología que se va a usar
+
+```prompt
+Lenguaje:
+Framewor / Librerías
+Versiones: 
+Arquitectura esperada (si aplica)
+```
+
+> Ejemplos
+
+* Lenguaje: Javascript
+* Backend: Node.js 20 + Express
+* Base de datos: MongoDB
+* Estilos: Tailwind CSS
+
+
+
+```prompt
+Actuá como un desarrollar front junior para desarrollar una página web para mostrar mis proyectos. Usando los lenguajes de programación html, css y js. Utilizar la librería Tailwind CSS.
+
+Necesito una página web sencilla para mostrar mis proyectos. O sea una página tipo landingpage de portfolio. Que tenga 4 secciones. Inicio, trabajos, información personal y contacto. Generar un canva para ver como quedo. En html, css y js.
+```
