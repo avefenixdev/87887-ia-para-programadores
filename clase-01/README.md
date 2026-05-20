@@ -81,10 +81,67 @@ Arquitectura esperada (si aplica)
 * Base de datos: MongoDB
 * Estilos: Tailwind CSS
 
-
+# 3 Objetivo principal (Medible y verificable)
+Especificar claramente el objetivo principal que se persigue. Ejemplo de lo que NO: "Hacer un CRUD" No es un objetivo
 
 ```prompt
-Actuá como un desarrollar front junior para desarrollar una página web para mostrar mis proyectos. Usando los lenguajes de programación html, css y js. Utilizar la librería Tailwind CSS.
+Quiero lograr:
+[accion concreta]
+[resultado observable]
+[para qué se va usar]
+```
 
-Necesito una página web sencilla para mostrar mis proyectos. O sea una página tipo landingpage de portfolio. Que tenga 4 secciones. Inicio, trabajos, información personal y contacto. Generar un canva para ver como quedo. En html, css y js.
+> Ejemplo
+
+* Quiero implementar un CRUD de productos que permita crear, listar, actualizar y eliminar productos, protegido con autenticación JWT par aun sistema administrativo
+
+# 4 Contexto actual
+Debemos decirle a la IA donde está parada.
+
+```prompt
+[Ya tengo implementado]:
+- ...
+[No tengo implementado]:
+- ---
+```
+
+# 5 Restricciones y decisiones forzadas
+Esto evita que las IAs supongan cosas.
+
+```prompt
+[Usar obligatoriamente]:
+- ...
+[Evitar completamente]
+- ...
+[Justificación de las restriciones (si aplica)]:
+- ...
+```
+
+# 6 Reglas de calidad y criterios técnicos
+Es fundamental para evitar respuesta no tan concretas basado en lo que espero y la calidad del código generado.
+
+```prompt
+El resultado debe:
+- Seguir buenas prácticas
+- Tener manejo de errores
+- Ser escalable / productivo (aclarar)
+- Evitar código inneceario o mágico
+```
+
+# 7 Formato de salida esperado
+Si no le pido formato de salida la inteligencia lo supone. Decide por nosotros.
+
+```prompt
+Formato: 
+- Código completo / fragmentos
+- Expolicación breve / detallada
+- Estructura de carpetas
+- Ejemplo de uso
+```
+
+# 8
+
+```prompt
+Actuá como un desarrollar front junior para desarrollar una página web. Usando los lenguajes de programación html, css y js. Utilizar la librería Tailwind CSS. Para lograr mostrar mis proyectos. Debe incluir las siguientes apartados. Inicio, trabajos, información personal y contacto. Tengo 5 imagenes por proyecto para mostrar en el apartado trabajos. Usar Tailwind y evitar usar Bootstrap. Seguir buenas prácticas, utilizar lo último e diseño UX/UI. Generar en un archivo zip. El código separado por tecnología. O sea un archivo para html, otro para css y otra js.
+
 ```
