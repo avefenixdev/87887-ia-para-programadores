@@ -1,0 +1,19 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.swiper-pagination-bullet {
+    background: #a855f7 !important;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #a855f7;
+    box-shadow: 0 0 10px rgba(168, 85, 247, 0.4);
+}

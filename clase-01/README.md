@@ -175,6 +175,12 @@ Antes de responder:
 - Aclarar si algo no es posible
 ```
 
+# Prompt modificado y optimizado luego del prompt enginnering
+
 ```prompt
 Actuá como un desarrollar front junior para desarrollar una página web. Usando los lenguajes de programación html, css y js. Utilizar la librería Tailwind CSS. Para lograr mostrar mis proyectos. Debe incluir las siguientes apartados. Inicio, trabajos, información personal y contacto. Tengo 5 imagenes por proyecto para mostrar en el apartado trabajos. Usar Tailwind y evitar usar Bootstrap. Seguir buenas prácticas, utilizar lo último e diseño UX/UI. Generar en un archivo zip. El código separado por tecnología. O sea un archivo para html, otro para css y otra js. Nivel de detalle intermedio. Si consideras hacerme preguntas para evitar ambiguedades o suposiciones por favor realizalas.
 ```
+
+<https://chatgpt.com/share/6a0dcc19-516c-83e9-8f79-0ced361fb5b4>
+<https://claude.ai/share/f36d1ca7-f90a-4692-ade0-e4578925fc9e>
+<https://gemini.google.com/share/1df2b78202e0>

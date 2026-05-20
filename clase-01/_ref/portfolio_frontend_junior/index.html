@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Profesional</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom scrollbar for tech/dark theme */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3b82f6;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-blue-500 selection:text-white">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#inicio" class="text-xl font-bold bg-gradient-to-r from-blue-400 to-indigo-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity">
+                &lt;Dev.Junior/&gt;
+            </a>
+            
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#inicio" class="text-slate-300 hover:text-blue-400 transition-colors">Inicio</a>
+                <a href="#trabajos" class="text-slate-300 hover:text-blue-400 transition-colors">Trabajos</a>
+                <a href="#informacion" class="text-slate-300 hover:text-blue-400 transition-colors">Información Personal</a>
+                <a href="#contacto" class="text-slate-300 hover:text-blue-400 transition-colors">Contacto</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden p-2 text-slate-400 hover:text-white focus:outline-none" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-4 pt-2 pb-4 space-y-3">
+            <a href="#inicio" class="block text-slate-300 hover:text-blue-400 transition-colors py-2">Inicio</a>
+            <a href="#trabajos" class="block text-slate-300 hover:text-blue-400 transition-colors py-2">Trabajos</a>
+            <a href="#informacion" class="block text-slate-300 hover:text-blue-400 transition-colors py-2">Información Personal</a>
+            <a href="#contacto" class="block text-slate-300 hover:text-blue-400 transition-colors py-2">Contacto</a>
+        </div>
+    </header>
+
+    <!-- INICIO (HERO SECTION) -->
+    <section id="inicio" class="min-h-screen flex items-center justify-center pt-16 relative overflow-hidden">
+        <!-- Background decorative glows -->
+        <div class="absolute top-1/4 left-1/4 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto px-4 text-center z-10">
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-6">
+                <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span> Disponible para nuevos proyectos
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6">
+                Hola, soy un Desarrollador <br>
+                <span class="bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-500 bg-clip-text text-transparent">
+                    Frontend Junior
+                </span>
+            </h1>
+            <p class="text-lg text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Especializado en construir experiencias web e interfaces interactivas de última generación utilizando HTML, CSS, JavaScript y Tailwind CSS. Enfocado en la optimización UX/UI.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#trabajos" class="px-6 py-3 rounded-lg font-medium bg-blue-600 hover:bg-blue-500 text-white shadow-lg shadow-blue-600/20 transition-all transform hover:-translate-y-0.5">
+                    Ver mis proyectos
+                </a>
+                <a href="#contacto" class="px-6 py-3 rounded-lg font-medium bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-700 transition-all transform hover:-translate-y-0.5">
+                    Ponete en contacto
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRABAJOS (PROJECTS SECTION) -->
+    <section id="trabajos" class="py-24 border-t border-slate-900 bg-slate-950">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold tracking-tight sm:text-4xl mb-4">Mis Proyectos</h2>
+                <p class="text-slate-400">Una galería interactiva de mis trabajos más recientes. Hacé clic en cualquier proyecto para explorar sus imágenes mediante el carrusel integrado.</p>
+            </div>
+
+            <!-- Grid Container where JS will inject projects dynamically -->
+            <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Skeleton or dynamic items will load here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- INFORMACIÓN PERSONAL (ABOUT ME) -->
+    <section id="informacion" class="py-24 border-t border-slate-900 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Visual / Decorative side -->
+                <div class="lg:col-span-5 relative flex justify-center">
+                    <div class="w-64 h-64 sm:w-80 sm:h-80 rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-900 p-1 shadow-xl transform rotate-2 hover:rotate-0 transition-transform duration-300">
+                        <div class="w-full h-full bg-slate-950 rounded-xl overflow-hidden flex flex-col items-center justify-center text-center p-6 border border-slate-800">
+                            <div class="w-24 h-24 rounded-full bg-slate-800 border-2 border-blue-500 flex items-center justify-center mb-4">
+                                <i class="fa-solid fa-code text-3xl text-blue-400"></i>
+                            </div>
+                            <h3 class="text-xl font-bold">Tu Nombre Aquí</h3>
+                            <p class="text-sm text-slate-400 mt-1">Front-End Developer</p>
+                            <div class="flex gap-4 mt-6 text-slate-400">
+                                <a href="#" class="hover:text-blue-400 transition-colors"><i class="fa-brands fa-github text-xl"></i></a>
+                                <a href="#" class="hover:text-blue-400 transition-colors"><i class="fa-brands fa-linkedin text-xl"></i></a>
+                                <a href="#" class="hover:text-blue-400 transition-colors"><i class="fa-brands fa-twitter text-xl"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text / Content side -->
+                <div class="lg:col-span-7">
+                    <h2 class="text-3xl font-bold tracking-tight sm:text-4xl mb-6 position-relative inline-block">
+                        Sobre Mí
+                        <span class="absolute bottom-0 left-0 w-12 h-1 bg-blue-500 rounded"></span>
+                    </h2>
+                    <p class="text-slate-300 mb-6 leading-relaxed">
+                        Soy un apasionado desarrollador frontend junior con un fuerte ojo para el diseño UX/UI. Me encanta transformar ideas complejas en interfaces limpias, limpias y altamente accesibles. Sigo las mejores prácticas del desarrollo moderno para garantizar rendimiento y adaptabilidad en cualquier dispositivo.
+                    </p>
+                    
+                    <h3 class="text-lg font-semibold text-slate-200 mb-4">Tecnologías Principales</h3>
+                    <div class="flex flex-wrap gap-3 mb-8">
+                        <span class="px-3 py-1.5 rounded-md bg-slate-800 border border-slate-700 text-sm font-medium text-slate-300"><i class="fa-brands fa-html5 text-orange-500 mr-2"></i>HTML5</span>
+                        <span class="px-3 py-1.5 rounded-md bg-slate-800 border border-slate-700 text-sm font-medium text-slate-300"><i class="fa-brands fa-css3-alt text-blue-500 mr-2"></i>CSS3</span>
+                        <span class="px-3 py-1.5 rounded-md bg-slate-800 border border-slate-700 text-sm font-medium text-slate-300"><i class="fa-brands fa-js text-yellow-500 mr-2"></i>JavaScript (ES6+)</span>
+                        <span class="px-3 py-1.5 rounded-md bg-slate-800 border border-slate-700 text-sm font-medium text-slate-300"><i class="fa-solid fa-wind text-cyan-400 mr-2"></i>Tailwind CSS</span>
+                        <span class="px-3 py-1.5 rounded-md bg-slate-800 border border-slate-700 text-sm font-medium text-slate-300"><i class="fa-brands fa-git-alt text-red-500 mr-2"></i>Git & GitHub</span>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4 border-t border-slate-800 pt-6">
+                        <div>
+                            <span class="block text-xs text-slate-500 uppercase tracking-wider">Ubicación</span>
+                            <span class="text-slate-300 font-medium">Buenos Aires, Argentina</span>
+                        </div>
+                        <div>
+                            <span class="block text-xs text-slate-500 uppercase tracking-wider">Educación / Perfil</span>
+                            <span class="text-slate-300 font-medium">Autodidacta enfocado en UX/UI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO (CONTACT SECTION WITH VALIDATION) -->
+    <section id="contacto" class="py-24 border-t border-slate-900 bg-slate-950">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold tracking-tight sm:text-4xl mb-4">¿Hablamos?</h2>
+                <p class="text-slate-400">Completá el formulario a continuación para enviarme un mensaje directo. Te responderé lo antes posible.</p>
+            </div>
+
+            <!-- Toast Alert for Success State -->
+            <div id="toast-success" class="hidden mb-6 p-4 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 flex items-center gap-3 animate-fade-in">
+                <i class="fa-solid fa-circle-check text-xl"></i>
+                <div>
+                    <span class="font-semibold">¡Mensaje enviado con éxito!</span> Gracias por escribirme, me pondré en contacto pronto.
+                </div>
+            </div>
+
+            <form id="contact-form" class="bg-slate-900 border border-slate-800 rounded-xl p-6 sm:p-10 space-y-6" novalidate>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-slate-300 mb-2">Nombre Completo</label>
+                        <input type="text" id="name" name="name" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-blue-500 transition-colors" placeholder="John Doe">
+                        <p id="error-name" class="hidden text-xs text-red-400 mt-1"></p>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-slate-300 mb-2">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-blue-500 transition-colors" placeholder="johndoe@ejemplo.com">
+                        <p id="error-email" class="hidden text-xs text-red-400 mt-1"></p>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="subject" class="block text-sm font-medium text-slate-300 mb-2">Asunto</label>
+                    <input type="text" id="subject" name="subject" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-blue-500 transition-colors" placeholder="Propuesta de proyecto / Oportunidad laboral">
+                    <p id="error-subject" class="hidden text-xs text-red-400 mt-1"></p>
+                </div>
+
+                <div>
+                    <label for="message" class="block text-sm font-medium text-slate-300 mb-2">Mensaje</label>
+                    <textarea id="message" name="message" rows="5" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-blue-500 transition-colors resize-none" placeholder="Hola! Me interesó tu perfil..."></textarea>
+                    <p id="error-message" class="hidden text-xs text-red-400 mt-1"></p>
+                </div>
+
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-medium py-3 rounded-lg transition-colors shadow-lg shadow-blue-600/10 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-paper-plane"></i> Enviar Mensaje
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 border-t border-slate-900 py-8 text-center text-sm text-slate-500">
+        <p>&copy; 2026. Diseñado y Desarrollado siguiendo lineamientos UX/UI de última generación.</p>
+    </footer>
+
+    <!-- INTERACTIVE DYNAMIC CARRUSEL / MODAL COMPONENT -->
+    <div id="carousel-modal" class="hidden fixed inset-0 z-50 overflow-hidden bg-slate-950/90 backdrop-blur-sm flex items-center justify-center p-4">
+        <!-- Close button outside or top corner -->
+        <button id="close-modal" class="absolute top-4 right-4 text-slate-400 hover:text-white p-2 z-50 text-2xl" aria-label="Cerrar modal">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="relative w-full max-w-4xl max-h-[85vh] flex flex-col justify-center">
+            <!-- Carousel Container -->
+            <div class="relative overflow-hidden rounded-xl bg-slate-900 border border-slate-800 aspect-video flex items-center justify-center">
+                
+                <!-- Images will be injected dynamically here -->
+                <div id="carousel-slides" class="w-full h-full relative"></div>
+
+                <!-- Navigation Controls -->
+                <button id="prev-slide" class="absolute left-4 p-3 rounded-full bg-slate-950/60 hover:bg-slate-950 border border-slate-800 text-slate-200 transition-colors">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button id="next-slide" class="absolute right-4 p-3 rounded-full bg-slate-950/60 hover:bg-slate-950 border border-slate-800 text-slate-200 transition-colors">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <!-- Indicators Dot Container -->
+            <div id="carousel-indicators" class="flex justify-center gap-2 mt-4"></div>
+            
+            <!-- Contextual Info underneath -->
+            <div class="mt-4 text-center">
+                <h3 id="modal-project-title" class="text-xl font-bold text-slate-100">Título del Proyecto</h3>
+                <p id="modal-project-desc" class="text-sm text-slate-400 mt-1">Descripción corta del proyecto.</p>
+            </div>
+        </div>
+    </div >
+
+    <!-- Core App Logic Javascript -->
+    <script src="app.js"></script>
+</body>
+</html>
