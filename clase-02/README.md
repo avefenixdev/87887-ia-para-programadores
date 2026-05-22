@@ -149,4 +149,23 @@ Generame una presentación visual sobre las IAs más utilizadas en la actualidad
 
 * <https://gamma.app/>
 
+# Agrupadores de IAs
+
+## Ollama
+Es un proyecto open source que permite correr modelos de lenguaje (LLMs)
+
+<https://ollama.com/>
+
+## Open Router
+
+<https://openrouter.ai/>
+
+# Interfaces gráficas
+Nos permiten usar los modelos como si estuvieramos usando Chat GPT
+
+* Open Web UI (conectarse con Ollama) <https://openwebui.com/>
+    - <https://github.com/open-webui/open-webui>
+* LMStudio (aplicación de escritorio) <https://lmstudio.ai/>
+
+
 
