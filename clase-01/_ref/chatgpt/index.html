@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Juan Pérez</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =========================
+       NAVBAR
+  ========================== -->
+  <header class="header">
+    <nav class="navbar container">
+      <h1 class="logo">JP.</h1>
+
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- =========================
+       HERO
+  ========================== -->
+  <section id="inicio" class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="subtitle">Frontend Developer</p>
+
+        <h2>
+          Hola, soy <span>Juan Pérez</span><br />
+          Creo experiencias web modernas.
+        </h2>
+
+        <p class="description">
+          Desarrollo interfaces rápidas, limpias y responsivas
+          enfocadas en experiencia de usuario y diseño moderno.
+        </p>
+
+        <a href="#proyectos" class="btn">
+          Ver proyectos
+        </a>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
+          alt="Foto perfil"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       PROYECTOS
+  ========================== -->
+  <section id="proyectos" class="projects">
+    <div class="container">
+      <h2 class="section-title">Proyectos</h2>
+
+      <div class="projects-grid">
+
+        <!-- Card -->
+        <article class="project-card">
+          <img
+            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f"
+            alt="Proyecto Ecommerce"
+          />
+
+          <div class="project-content">
+            <h3>Ecommerce UI</h3>
+
+            <p>
+              Tienda online moderna con diseño responsive y
+              experiencia de compra optimizada.
+            </p>
+
+            <a href="#" class="project-link">
+              Ver proyecto →
+            </a>
+          </div>
+        </article>
+
+        <!-- Card -->
+        <article class="project-card">
+          <img
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+            alt="Dashboard"
+          />
+
+          <div class="project-content">
+            <h3>Dashboard Analytics</h3>
+
+            <p>
+              Panel administrativo interactivo con gráficos y
+              métricas en tiempo real.
+            </p>
+
+            <a href="#" class="project-link">
+              Ver proyecto →
+            </a>
+          </div>
+        </article>
+
+        <!-- Card -->
+        <article class="project-card">
+          <img
+            src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d"
+            alt="App Mobile"
+          />
+
+          <div class="project-content">
+            <h3>Landing SaaS</h3>
+
+            <p>
+              Página promocional minimalista enfocada en conversión
+              y rendimiento.
+            </p>
+
+            <a href="#" class="project-link">
+              Ver proyecto →
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       ABOUT
+  ========================== -->
+  <section id="about" class="about">
+    <div class="container about-content">
+
+      <div class="about-text">
+        <h2 class="section-title">Sobre mí</h2>
+
+        <p>
+          Soy desarrollador frontend apasionado por crear productos
+          digitales modernos, intuitivos y escalables.
+        </p>
+
+        <p>
+          Me especializo en HTML, CSS y JavaScript, con foco en
+          diseño responsive, performance y accesibilidad.
+        </p>
+      </div>
+
+      <div class="skills">
+        <h3>Tecnologías</h3>
+
+        <div class="skill-tags">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>Responsive Design</span>
+          <span>UI/UX</span>
+          <span>Git</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================
+       CONTACTO
+  ========================== -->
+  <section id="contacto" class="contact">
+    <div class="container">
+      <h2 class="section-title">Contacto</h2>
+
+      <div class="contact-wrapper">
+
+        <form class="contact-form">
+          <input type="text" placeholder="Nombre" required />
+          <input type="email" placeholder="Email" required />
+          <textarea
+            rows="5"
+            placeholder="Tu mensaje..."
+            required
+          ></textarea>
+
+          <button type="submit" class="btn">
+            Enviar mensaje
+          </button>
+        </form>
+
+        <div class="contact-info">
+          <p>Email:</p>
+          <a href="mailto:juan@email.com">
+            juan@email.com
+          </a>
+
+          <div class="social-links">
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="#">Twitter</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
