@@ -135,3 +135,18 @@ Las IA no saben, no entienden y no verifican la verdad.
 * Basándose en patrones estadisticos
 * Entrenadas con grandes volúmenes de texto (información)
 
+# Creando presentaciones tipo Power Point con Gemini
+
+NOTA: Elegir CANVA haciendo click en el +.
+
+```prompt
+Generame una presentación visual sobre las IAs más utilizadas en la actualidad. Con imagenes, iconos y diagramas.
+```
+
+<https://gemini.google.com/share/e0adbb8d2ed0>
+
+> Compartido por Marco
+
+* <https://gamma.app/>
+
+
