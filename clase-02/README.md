@@ -167,5 +167,14 @@ Nos permiten usar los modelos como si estuvieramos usando Chat GPT
     - <https://github.com/open-webui/open-webui>
 * LMStudio (aplicación de escritorio) <https://lmstudio.ai/>
 
+## Repositorio de los modelos Open Source IA es:
 
+<https://huggingface.co/>
 
+* El objetivo democratizar el acceso a las IA (Que no sea proyectos propietarios)
+* Es github pero de modelos de open source
+* Para utilziarlo es recomendable crear una cuenta
+
+> Compartido por Esteban y Maxi
+
+<https://opencode.ai/go>
