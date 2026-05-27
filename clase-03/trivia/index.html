@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Trivia JavaScript</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main id="app" class="app">
+    <!-- Intro Screen -->
+    <section id="intro" class="panel center visible" aria-hidden="false">
+      <div class="card intro-card">
+        <h1 class="title">JS Trivia</h1>
+        <p class="subtitle">5 preguntas • 4 opciones • 10 pts c/u</p>
+        <div class="score-live" aria-hidden="true">
+          Puntaje: <span id="live-score">0</span>/50
+        </div>
+        <button id="start-btn" class="btn primary big" type="button">Comenzar</button>
+      </div>
+    </section>
+
+    <!-- Quiz Screen -->
+    <section id="quiz" class="panel center" aria-hidden="true">
+      <div class="quiz-shell card">
+        <header class="quiz-header">
+          <div class="meta">
+            <div class="q-index" id="q-index">Pregunta 1 / 5</div>
+            <div class="live-score">Puntaje: <span id="score">0</span></div>
+          </div>
+          <div class="progress-outer" aria-hidden="true">
+            <div id="progress" class="progress"></div>
+          </div>
+        </header>
+
+        <div class="question-area">
+          <h2 id="question-text" class="question">—</h2>
+          <div id="options" class="options" role="listbox" aria-label="Opciones"></div>
+        </div>
+
+        <footer class="quiz-footer">
+          <div class="hint" id="hint" aria-live="polite"></div>
+          <div class="controls">
+            <button id="skip-btn" class="btn secondary" type="button">Saltar</button>
+            <div class="tiny">Respuesta automática y transición</div>
+          </div>
+        </footer>
+      </div>
+    </section>
+
+    <!-- Result Screen -->
+    <section id="result" class="panel center" aria-hidden="true">
+      <div class="card result-card">
+        <h2 class="result-title" id="result-title">Resultado</h2>
+        <p class="result-score" id="result-score">0 / 50</p>
+        <div class="result-msg" id="result-msg">—</div>
+        <div class="result-actions">
+          <button id="retry-btn" class="btn primary big" type="button">Jugar nuevamente</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

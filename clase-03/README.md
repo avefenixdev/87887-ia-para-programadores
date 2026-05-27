@@ -71,3 +71,30 @@ Necesito ayuda para generar un diagrama de secuencia con la IA mermaidlive me gu
 <https://mermaid.ai/app/projects/3a7f5439-38fe-4b43-83ac-6ab62d40c8fc/diagrams/4858b695-fc2c-4654-9811-149b12a784fc/version/v0.1/edit>
 
 ![Diagrama de secuencia](_ref/secuencia.png)
+
+# IA para generar diagramas.
+Todas las IAs pueden escribir código Mermaid. Mermaid es una lenguaje de diagramas que permite crear gráficos escribiendo texto.
+
+* Diagrama de flujo
+* Diagramas de secuencia
+* Diagramas de clases
+* Diagramas de estados
+* Gantt
+* ER (Base de datos)
+
+# Herramienta para desarrollar aplicaciones y juegos online en HTML, CSS, JS
+
+<https://websim.com/>
+
+* Genera aplicaciones interactivas (tipos juegos)
+* Genera en HTML y Javascript
+* Especializada en gráficos
+* Este modelo fue alimentado con librerías de gráficos. Tipo ThreeJS <https://threejs.org/>
+
+```prompt
+Me gustaría generar una trivia sobre el lenguaje de javascript. 5 preguntas y cada pregunta suma 10 si está correcta. Voy a estar usando la IA webSim para crear esa trivia. Necesito un prompt optimizado para que la IA pueda generar el juego. Usa las últimas y mejores practicas para realizar el prompt y si es necesario hace las preguntas que consideres sobre las funcionalidades y requerimientos que necesites
+```
+
+<https://chatgpt.com/share/6a1703a0-2340-83e9-a637-f658e6efcbe6>
+
+<https://websim.com/@scaredcompass4876532/trivia-javascript>
