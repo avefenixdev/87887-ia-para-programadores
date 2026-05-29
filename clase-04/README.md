@@ -184,3 +184,30 @@ Estás herramientas tienen 2 modos de funcionamiento
 
 <https://jsdoc.app/>
 <https://chatgpt.com/share/6a19a2e4-03b8-83e9-9c31-0dccca2ad610>
+
+
+## IAs para crear de manera muy sencilla aplicaciones React
+
+### v0 (de Vercel)
+
+Está especializado en generar componentes de interfaz de usuario (UI), típicamente en React/Tailwind.
+Su IA convierte descripciones o diseños en código frontend reutilizable.
+No genera backend ni lógica de datos — eso queda para vos o para otro servicio.
+
+> Prompt para v0
+<https://claude.ai/share/1d2b1c36-9cbb-4613-96d4-b388611a76cb>
+
+### Bolt (de StackBlitz)
+
+Es una plataforma de desarrollo AI-asistido completa donde podés describir tu aplicación y la IA va generando código funcional full-stack que se ejecuta en un editor en tu navegador.
+Incluye tanto frontend como backend y herramientas de colaboración, con control de código directo para desarrolladores técnicos.
+
+### Lovable
+
+Va más allá del código aislado: genera aplicaciones completas full-stack, auto-configura backend (base de datos, autenticación, etc.) y te da tanto edición visual como acceso al código.
+Su foco es que alguien sin mucha experiencia técnica pueda describir su idea y tener una app deployable rápidamente.
+
+* <https://bolt.new/>
+* <https://v0.app/>
+* <https://lovable.dev/>
+* <https://replit.com/>
