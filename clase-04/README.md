@@ -172,4 +172,10 @@ Estás herramientas tienen 2 modos de funcionamiento
 
 <https://videotranscriber.ai/>
 
+# Code Assistant (Asistentes de código)
 
+* GitHub Copilot <https://github.com/copilot>
+    - GitHub.copilot-chat
+* Cursor <https://cursor.com/es/home>
+
+* Antigravity <https://antigravity.google/>
