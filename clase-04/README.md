@@ -179,3 +179,8 @@ Estás herramientas tienen 2 modos de funcionamiento
 * Cursor <https://cursor.com/es/home>
 
 * Antigravity <https://antigravity.google/>
+
+## Trabajando con documentación JSDoc
+
+<https://jsdoc.app/>
+<https://chatgpt.com/share/6a19a2e4-03b8-83e9-9c31-0dccca2ad610>

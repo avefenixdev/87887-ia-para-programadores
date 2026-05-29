@@ -51,6 +51,13 @@ function obtenerPiConCincoDecimales() {
 
 // Caso 4: Generación de a partir de el chat (Ctrl + Shift + I)
 
+/**
+ * Calcula el factorial de un número.
+ * Si el valor es negativo, devuelve un mensaje de error.
+ *
+ * @param {number} n - Número entero del que se desea calcular el factorial.
+ * @returns {number|string} El factorial del número o un mensaje de error si es negativo.
+ */
 // Función para calcular el factorial de un número, debe manejar el caso de números negativos
 function calcularFactorial(n) {
     if (n < 0) {
